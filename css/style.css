@@ -1,0 +1,81 @@
+body {
+/*  background-color: #eee;*/
+  margin-top: 60px;
+}
+
+#content {
+  background-color: #fff;
+}
+
+.navbar-fixed-top .brand {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 20px;
+  float: right;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+  -webkit-transition: all .2s linear;
+}
+
+
+/* Code Mirror */
+.cm-s-default span.cm-keyword {color: #708;}
+.cm-s-default span.cm-atom {color: #219;}
+.cm-s-default span.cm-number {color: #164;}
+.cm-s-default span.cm-def {color: #00f;}
+.cm-s-default span.cm-variable {color: black;}
+.cm-s-default span.cm-variable-2 {color: #05a;}
+.cm-s-default span.cm-variable-3 {color: #0a5;}
+.cm-s-default span.cm-property {color: black;}
+.cm-s-default span.cm-operator {color: black;}
+.cm-s-default span.cm-comment {color: #a50;}
+.cm-s-default span.cm-string {color: #a11;}
+.cm-s-default span.cm-meta {color: #555;}
+.cm-s-default span.cm-error {color: #f00;}
+.cm-s-default span.cm-qualifier {color: #555;}
+.cm-s-default span.cm-builtin {color: #30a;}
+.cm-s-default span.cm-bracket {color: #cc7;}
+.cm-s-default span.cm-tag {color: #170;}
+.cm-s-default span.cm-attribute {color: #00c;}
+
+.editor {
+  padding: 10px 0 0 0;
+}
+
+.editorArea > .buttons {
+  text-align: right;
+}
+
+.editorArea > .alert-message {
+  margin-bottom: 0;
+  padding: 5px 14px 6px;
+}
+
+.editorArea > .error a {
+  color: #fff;
+  border-bottom: dashed 1px #fff;
+}
+
+.editorArea > .error a:hover {
+  border-bottom: solid 1px #fff;
+  text-decoration: none;
+}
+
+.editorArea .CodeMirror {
+  background-color: #fff;
+  border-radius: 3px;
+  border: solid 1px #999;
+  margin: 10px 0;
+}
+
+.editorArea .CodeMirror-scroll {
+  min-height: 300px; height: auto;
+}
+
+
+div#preview {
+  width: 100%;
+  height: auto;
+  border: 0;
+}
