@@ -18,49 +18,88 @@
     
 </head>
 <body>
-    <div class="container">
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
+        <div class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
 
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
+              <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
 
-          <!-- Everything you want hidden at 940px or less, place within here -->
-          <div class="nav-collapse">
-              <ul class="nav">
-                <li class="active"><a href="#"><i class="icon-inbox icon-white"></i> News</a></li>
-                <li><a href="#"><i class="icon-book icon-white"></i> Research Center</a></li>
-                <li><a href="#"><i class="icon-th-list icon-white"></i> Working Groups</a></li>
-                <li><a href="#"><i class="icon-calendar icon-white"></i> Events</a></li>
-                <li><a href="#"><i class="icon-user icon-white"></i> Directory</a></li>
-                
-              </ul>
-            <!-- .nav, .navbar-search, .navbar-form, etc -->
+              <!-- Everything you want hidden at 940px or less, place within here -->
+              <div class="nav-collapse">
+                  <ul class="nav">
+                    <!-- Research Center Dropdown -->
+                    <li class="dropdown active" id="navbar_research">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#navbar_research">
+                        <i class="icon-book icon-white"></i> Research Center
+                        <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">News Articles</a></li>
+                        <li><a href="#">Document Library</a></li>
+                        <li><a href="#">Working Groups</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Dashboard</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#"><i class="icon-calendar icon-white"></i> Events</a></li>
+
+                    <!-- Directory Dropdown -->
+                    <li class="dropdown" id="navbar_directory">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#navbar_directory">
+                        <i class="icon-user icon-white"></i> Directory
+                        <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Companies</a></li>
+                        <li><a href="#">People</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">My Company</a></li>
+                        <li><a href="#">My Profile</a></li>
+                      </ul>
+                    </li>
+                    <li class="divider-vertical"></li>
+                  </ul>
+                  <form class="navbar-search pull-left">
+                    <input type="text" class="search-query" placeholder="Search">
+                  </form>
+                <!-- .nav, .navbar-search, .navbar-form, etc -->
+              </div>
+              <div class="nav pull-right">
+              <!-- Be sure to leave the brand out there if you want it shown -->
+              <a class="brand" href="#">CCRO Members Portal</a>
+              </div>
+
+            </div>
+
           </div>
-          <div class="nav pull-right">
-          <!-- Be sure to leave the brand out there if you want it shown -->
-          <a class="brand" href="#">Committee of Chief Risk Officers</a>
-          </div>
-
         </div>
-
-      </div>
-    </div>
+    <div class="container">
     
       <div class="row-fluid">
-        <div id="content" class="span9">
+        <div id="content" class="span12">
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Research Center</a> <span class="divider">/</span>
+              </li>
+              <li>
+                <a href="#">News Articles</a> <span class="divider">/</span>
+              </li>
+              <li class="active">
+                <a href="#">CCRO-Recommended ISO Credit ... Draft Dec. 1-2 in DC</a>
+              </li>
+            </ul>
             
             <ul class="nav nav-tabs">
               <li><a href="news-show.html">View</a></li>
               <li class="active">
                 <a href="news-edit.html">Edit</a>
               </li>
-              <li><a href="#">Permissions</a></li>
+              <li><a href="news-permissions.html">Permissions</a></li>
             </ul>
             <div class="pull-left"><button class="btn btn-primary">Save</button> <button class="btn">Cancel</button></div>
             <ul class="nav nav-pills pull-right">
@@ -76,14 +115,33 @@
                   <div class="editor">
                     <div class="editorArea">
                       <textarea id="editor">
+<h3>November 18, 2011</h3>
 <br /><br />
-<div class="pull-right" style="padding: 0px 0px 10px 10px">
-  <div class="thumbnail">
-    <img src="http://farm7.static.flickr.com/6220/6235540952_b24aa0e467_m.jpg" alt="">
-    <h5>Jim Pierobon</h5>
-    <p>Pierobon & Partners LLC</p>
-    <button class="btn">View profile</button>
-  </div>
+<div class="well pull-right" style="width: 320px; padding: 0 0 10px 10px;">
+  <ul class="nav nav-list">
+        <li class="nav-header">
+          Related Working Groups
+        </li>
+      <li>
+        <a href="#">
+          <i class="icon-th-list"></i>
+          ISO Standards <span class="label label-important"><i class="icon-fire icon-white"></i> Hot Topic</span>
+        </a>
+      </li>
+    </ul>
+
+  <ul class="nav nav-list">
+        <li class="nav-header">
+          Related Documents
+        </li>
+      <li>
+        <a href="#">
+          <i class="icon-book"></i>
+          Risk Management Standards for Energy Market Participants Draft 3
+        </a>
+      </li>
+    </ul>
+
 </div>
 <p>
 Credit standards for wholesale electric markets have the opportunity to become a uniformly guiding force under FERC Order 741 thanks to work nearing completion by the Committee of Chief Risk Officers, CCRO.
@@ -109,6 +167,20 @@ Given the roles that credit has played in the nation’s recent financial setbac
 </p><p>
 As a unique, independent, affiliation of credit and energy risk management professionals collaborating in an antitrust-compliant environment, the CCRO, along with inputs from senior staff from ISOs, utilities and power marketers, are achieving uniformity which began with surveys and questionnaires earlier this year. The single standard ready for a final industry review can serve all market players, answer several questions and minimize risks and uncertainty going forward.
 </p>
+      <div class="well">
+          <div class="thumbnail pull-left" style="background-color: white; margin-right: 15px;">
+            <img src="http://farm7.static.flickr.com/6220/6235540952_b24aa0e467_m.jpg" alt="" width="160">
+            <h5>Jim Pierobon</h5>
+            <p>Pierobon & Partners LLC</p>
+          </div>
+          <h3>About the author</h3>
+           <p>Jim helped grow a boutique energy utility PR firm, Potomac Communications Group, and then was recruited to help lead and develop the energy and environment accounts in the Public Affairs practice at Ogilvy Public Relations Worldwide ultimately as Senior Vice President.
+          <br /><br />
+           He launched Pierobon & Partners LLC in 2006 to integrate his offerings with his growing network of fellow marketing and communications pros throughout the U.S. He and his colleagues have served clients such as the U.S. Nuclear Regulatory Commission, Committee ...</p>
+           <button class="btn pull-right">Go to profile</button>
+           <div style="clear: both"></div> 
+      </div>  
+
                       </textarea>
                     </div>
                     </div>
@@ -122,44 +194,6 @@ As a unique, independent, affiliation of credit and energy risk management profe
             <hr /><button class="btn btn-primary">Save</button> <button class="btn">Cancel</button>
             
          <!--Body content-->
-        </div>
-        <div id="sidebar" class="span3">
-          <!--Sidebar content-->
-          <ul class="nav nav-list">
-              <li class="nav-header">
-                Other Working Groups
-              </li>
-            <li>
-              <a href="#">
-                <i class="icon-book"></i>
-                Debt Equivalency
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="icon-book"></i>
-                ISO Standards <span class="label label-important"><i class="icon-fire icon-white"></i> Hot Topic</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="icon-book"></i>
-                Some other group
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="icon-book"></i>
-                Another Different Group
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="icon-book"></i>
-                Yet Another Project
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
       <footer>&copy; 2012 Committee of Chief Risk Officers.</footer>
@@ -179,7 +213,7 @@ As a unique, independent, affiliation of credit and energy risk management profe
       });
 
       editor.focus();
-      editor.setSelection({ line: 0, ch: 0 }, { line: 0, ch: 23 });
+      // editor.setSelection({ line: 0, ch: 0 }, { line: 0, ch: 23 });
       function updatePreview() {
         var preview = document.getElementById('preview');
         preview.innerHTML = "<h2>" + document.getElementById('title').value + "</h2>" + editor.getValue();

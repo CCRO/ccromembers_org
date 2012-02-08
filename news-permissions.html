@@ -1,0 +1,218 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>CCRO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.responsive" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/codemirror.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-1.7.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/codemirror.js"></script>
+    <script src="js/mode/xml/xml.js"></script>
+    <script src="js/mode/markdown/markdown.js"></script>
+    <script src="js/mode/gfm/gfm.js"></script>
+    <script src="js/mode/javascript/javascript.js"></script>
+    <style>
+        td, th {
+            text-align: center !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse">
+              <ul class="nav">
+                <!-- Research Center Dropdown -->
+                <li class="dropdown active" id="navbar_research">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#navbar_research">
+                    <i class="icon-book icon-white"></i> Research Center
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">News Articles</a></li>
+                    <li><a href="#">Document Library</a></li>
+                    <li><a href="#">Working Groups</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Dashboard</a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><i class="icon-calendar icon-white"></i> Events</a></li>
+
+                <!-- Directory Dropdown -->
+                <li class="dropdown" id="navbar_directory">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#navbar_directory">
+                    <i class="icon-user icon-white"></i> Directory
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Companies</a></li>
+                    <li><a href="#">People</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">My Company</a></li>
+                    <li><a href="#">My Profile</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+              </ul>
+              <form class="navbar-search pull-left">
+                <input type="text" class="search-query" placeholder="Search">
+              </form>
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+          </div>
+          <div class="nav pull-right">
+          <!-- Be sure to leave the brand out there if you want it shown -->
+          <a class="brand" href="#">CCRO Members Portal</a>
+          </div>
+
+        </div>
+    </div>
+
+      </div>
+    <div class="container">
+    
+      <div class="row-fluid">
+        <div id="content" class="span12">
+
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Research Center</a> <span class="divider">/</span>
+              </li>
+              <li>
+                <a href="#">News Articles</a> <span class="divider">/</span>
+              </li>
+              <li class="active">
+                <a href="#">CCRO-Recommended ISO Credit ... Draft Dec. 1-2 in DC</a>
+              </li>
+            </ul>
+            
+            <ul class="nav nav-tabs">
+              <li>
+              <a href="news-show.html">View</a>
+              </li>
+              <li>  
+                <a href="news-edit.html">Edit</a>
+              </li>
+              <li class="active"><a href="#">Permissions</a></li>
+            </ul>
+
+<table class="table table-bordered">
+    <tr>
+        <th rowspan="2"></th>
+        <th colspan="4">Viewing</th>
+        <th colspan="4">Interaction</th>
+        <th colspan="3">Manage</th>
+    </tr>
+    <tr>
+        <th>Body</th>
+        <th>Teaser</th>
+        <th>See</th>
+        <th>None</th>
+        <th>Read <br />Comment</th>
+        <th>Post <br />Comment</th>
+        <th>See <br />Votes</th>
+        <th>Vote</th>
+        <th>Full</th>
+        <th>Edit</th>
+        <th>None</th>
+    </tr>
+    <tbody>
+        <tr>
+            <td>Administrators</td>
+            <td><input type="radio" class="inline" name="admin_optionsRadios" id="optionsRadios1" value="option1" checked disabled></td>
+            <td><input type="radio" class="inline" name="admin_optionsRadios" id="optionsRadios1" value="option1" disabled></td>
+            <td><input type="radio" class="inline" name="admin_optionsRadios" id="optionsRadios1" value="option1" disabled></td>
+            <td><input type="radio" class="inline" name="admin_optionsRadios" id="optionsRadios1" value="option1" disabled></td>
+            <td><input type="checkbox" id="optionsCheckbox" value="option1" checked disabled></td>
+            <td><input type="checkbox" id="optionsCheckbox" value="option1" checked disabled></td>
+            <td><input type="checkbox" id="optionsCheckbox" value="option1" checked disabled></td>
+            <td><input type="checkbox" id="optionsCheckbox" value="option1" checked disabled></td>
+            <td><input type="radio" class="inline" name="admin_optionsRadios2" id="optionsRadios1" value="option1" checked></td>
+            <td><input type="radio" class="inline" name="admin_optionsRadios2" id="optionsRadios1" value="option1"></td>
+            <td><input type="radio" class="inline" name="admin_optionsRadios2" id="optionsRadios1" value="option1"></td>
+        </tr>
+    <tr>
+        <td>Members</td>
+        <td><input type="radio" class="inline" name="optionsRadios" id="optionsRadios1" value="option1" checked></td>
+        <td><input type="radio" class="inline" name="optionsRadios" id="optionsRadios1" value="option1"></td>
+        <td><input type="radio" class="inline" name="optionsRadios" id="optionsRadios1" value="option1"></td>
+        <td><input type="radio" class="inline" name="optionsRadios" id="optionsRadios1" value="option1"></td>
+        <td><input type="checkbox" id="optionsCheckbox" value="option1" checked></td>
+        <td><input type="checkbox" id="optionsCheckbox" value="option1" checked></td>
+        <td><input type="checkbox" id="optionsCheckbox" value="option1"></td>
+        <td><input type="checkbox" id="optionsCheckbox" value="option1"></td>
+        <td><input type="radio" class="inline" name="optionsRadios2" id="optionsRadios1" value="option1"></td>
+        <td><input type="radio" class="inline" name="optionsRadios2" id="optionsRadios1" value="option1"></td>
+        <td><input type="radio" class="inline" name="optionsRadios2" id="optionsRadios1" value="option1" checked></td>
+    </tr>
+    <tr>
+        <td>Jack Yeager</td>
+        <td><input type="radio" class="inline" name="jack_optionsRadios" id="optionsRadios1" value="option1" checked disabled></td>
+        <td><input type="radio" class="inline" name="jack_optionsRadios" id="optionsRadios1" value="option1" disabled></td>
+        <td><input type="radio" class="inline" name="jack_optionsRadios" id="optionsRadios1" value="option1" disabled></td>
+        <td><input type="radio" class="inline" name="jack_optionsRadios" id="optionsRadios1" value="option1" disabled></td>
+        <td><input type="checkbox" id="optionsCheckbox" value="option1" checked></td>
+        <td><input type="checkbox" id="optionsCheckbox" value="option1" checked></td>
+        <td><input type="checkbox" id="optionsCheckbox" value="option1" checked></td>
+        <td><input type="checkbox" id="optionsCheckbox" value="option1" ></td>
+        <td><input type="radio" class="inline" name="jack_optionsRadios2" id="optionsRadios1" value="option1"></td>
+        <td><input type="radio" class="inline" name="jack_optionsRadios2" id="optionsRadios1" value="option1" checked></td>
+        <td><input type="radio" class="inline" name="jack_optionsRadios2" id="optionsRadios1" value="option1"></td>
+    </tr>
+    </tbody>
+</table>
+<button class="btn btn-primary"><i class="icon-plus icon-white"></i> Add person or group</button>
+<br /><br />
+  
+         <!--Body content-->
+        </div>
+        </div>
+
+
+      <footer class="footer">&copy; 2012 Committee of Chief Risk Officers.</footer>
+  </div>
+    <script>
+    $("a[rel=popover]")
+      .popover({placement: 'left'})
+      .click(function(e) {
+        e.preventDefault()
+      })
+    var delay;
+      var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+        mode: 'gfm',
+        theme: 'default',
+        matchBrackets: true,
+        lineNumbers: true,
+        lineWrapping: true,
+        onChange: function() {
+          clearTimeout(delay);
+          delay = setTimeout(updatePreview, 300);
+        }
+      });
+
+      editor.focus();
+      editor.setSelection({ line: 0, ch: 0 }, { line: 0, ch: 23 });
+      function updatePreview() {
+        var preview = document.getElementById('preview');
+        preview.innerHTML = "<h2>" + document.getElementById('title').value + "</h2>" + editor.getValue();
+        }
+        setTimeout(updatePreview, 300);
+        
+
+        
+    </script>    
+    
+</body>
+</html>
